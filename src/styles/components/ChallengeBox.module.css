@@ -60,3 +60,48 @@
     justify-content: center;
     align-items: center;
 }
+
+.challengeActive main strong {
+    color: var(--title);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+}
+
+.challengeActive main p {
+    line-height: 1.5;
+}
+
+.challengeActive footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de 1fr */
+    gap: 1rem;
+}
+
+.challengeActive footer button {
+    display: flex;
+    color: var(--white);
+    height: 3rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+
+    transition: filter 0.2s;
+}
+
+.challengeActive footer button.challengeFailedButton {
+    background: var(--red);
+}
+
+.challengeActive footer button.challengeSucceededButton {
+    background: var(--green);
+}
+
+.challengeActive footer button:hover {
+    filter: brightness(0.9);
+}
